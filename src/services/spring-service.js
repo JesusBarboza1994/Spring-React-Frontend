@@ -7,6 +7,6 @@ export async function getSprings(){
 }
 
 export async function createSprings(data){
-  const { spring, message, points, forces } = await apiFetch("/springs/", {body: data})
-  return {spring: spring, points: points, forces: forces};
+  const { message, points, forces } = await apiFetch("/springs/", {body: data})
+  return {message:message, points: points, forces: forces};
 }
